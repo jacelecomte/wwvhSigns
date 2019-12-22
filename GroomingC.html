@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/simple.js"></script>
+    <script type="text/javascript" src="./src/html2canvas.js"></script>
+    <script src="./src/SigPad.js"></script>
+    <link rel="stylesheet" type="text/css" href="./theme.css" media="screen" />
+    <title>Grooming Consent Form</title>
+</head>
+<body onload="onPageView()">
+    <h1> Warren Woods Veterinary Hospital Grooming Consent Form </h1>
+    <p id="HospInfo"></p>
+    <p>
+        Your pet is very important to us.  Please be assured that every effort will be made to make your pet as comfortable as possible, and because we care, it is
+        required for them to be up to date on Rabies, Distemper with lepto (DHLPP) and Bordetella. If your pet is severely matted or tangled, there is a greater risk of injury.
+        Even though all proper precautions will be taken, there is always a chance that nicks, or clipper burns can occur. In rare cases, pets with serious medical conditions
+        can experience medical problems while grooming.  These conditions are not always obvious. In signing this form, you fully understand that there are potential risks
+        during your pets grooming session. Also by signing this form you agree to pay in full for services rendered including those deemed necessary for medical complications.
+    </p>
+
+    <div class="checkboxes">
+        <div>
+            <label for="bath">Bath</label>
+            <input type="checkbox" class="largerCheckbox" name="bath" id="bath" tabindex="1" unchecked />
+        </div> <br>
+        <div>
+            <label for="nailtrim">Nail Trim</label>
+            <input type="checkbox" name="nailtrim" id="nailtrim" tabindex="2" unchecked />
+        </div> <br>
+        <div>
+            <label for="nailtrim">Grooming</label>
+            <input type="checkbox" name="grooming" id="grooming" tabindex="3" unchecked />
+        </div>
+        <div>  (must speak with groomer in order to have this service performed) </div>
+        <div>
+            <label for="nailtrim">Express Anal Glands</label>
+            <input type="checkbox" name="analglands" id="analglands" tabindex="4" unchecked />
+        </div> <br>
+        <div>
+            <label for="nailtrim">Ear Cleaning</label>
+            <input type="checkbox" name="earcleaning" id="earcleaning" tabindex="5" unchecked />
+        </div> <br>
+        <div>
+            <label for="input-first">Other Services:</label>
+            <input type="text" id="other" autofocus placeholder="" tabindex="6" />
+        </div>
+    </div>
+
+    <p id="CritSigInfo"></p>
+
+    <p id="userinfo"></p> <p id="whattime"></p> <p id="date"></p>
+
+    <div class="wrapper"> <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas> </div> <br><br>
+
+    <button class="block" onclick="onFinSig()" id="save-png">Finalize Signature</button> <br><br>
+
+    <button class="oblock" id="clear">Clear and Reset Signature</button>
+
+
+</body>
+</html>
+
+<footer>
+    <script>
+        createSigPad();
+    </script>
+</footer>

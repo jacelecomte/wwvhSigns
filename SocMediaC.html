@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/simple.js"></script>
+    <script type="text/javascript" src="./src/html2canvas.js"></script>
+    <script src="./src/SigPad.js"></script>
+    <link rel="stylesheet" type="text/css" href="./theme.css" media="screen" />
+    <title> Vaccine Consent Form </title>
+</head>
+<body onload="onPageView()">
+    <h1> Warren Woods Veterinary Hospital Social Media Consent Form </h1>
+
+    <p id="HospInfo"></p>
+
+    <p>
+        I hereby consent to release for possible publication of any combination of my pets name, photo, video, my first name, and/or personal testimonail statement. This may include but is not
+        limited to the Warren Woods Veterinary Hospital website, Facebook, Twitter, Instagram, Youtube, Pinterest, and other social media platforms. 
+    </p>
+
+    <p id="CritSigInfo"></p>
+
+    <p id="userinfo"></p> <p id="whattime"></p> <p id="date"></p>
+
+    <div class="wrapper"> <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas> </div> <br><br>
+
+    <button class="block" onclick="onFinSig()" id="save-png">Finalize Signature</button> <br><br>
+
+    <button class="oblock" id="clear">Clear and Reset Signature</button>
+
+</body>
+</html>
+
+<footer>
+    <script>
+        createSigPad();
+    </script>
+</footer>
+
+

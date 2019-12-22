@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/simple.js"></script>
+    <script type="text/javascript" src="./src/html2canvas.js"></script>
+    <script src="./src/SigPad.js"></script>
+    <link rel="stylesheet" type="text/css" href="./theme.css" media="screen" />
+    <title> Stray Release Form </title>
+</head>
+<body onload="writeHospInfo()">
+    <h1>Warren Woods Veterinary Hopsital Dental Consent Form</h1>
+    <p id="HospInfo"></p>
+    <p>
+        I release the named-below animal to Warren Woods Veterinary Hopsital. I relinquish financial responsibility by giving this animal to Warren Woods Veterinary
+        Hospital. It is the doctors decision to treat or euthanize the animal as they deem appropriate. I may make a donation to cover costs for this animal at my
+        discretion. <br> </p>
+    <p id="critical"
+        The disposition of the described animal(s) is strictly confidential and absolutely no information will be released to the undersigned as to the condition, fate 
+        or whereabouts of said animal(s). </p>
+
+    <div>
+        <label for="input-first">Description of Animal:</label>
+        <input type="text" id="number" autofocus placeholder="" tabindex="1" />
+    </div>
+
+    <p> I have carefully read the above release agreement and with knowledge and understanding of the agreement do hereby relinquish all rights to the above
+    described animal(s). </p>
+
+
+    <p id="critical"></p>
+
+    <p id="userinfo"></p> <p id="whattime"></p> <p id="date"></p>
+
+    <div class="wrapper"> <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas> </div> <br><br>
+
+    <button class="block" onclick="onFinSig()" id="save-png">Finalize Signature</button> <br><br>
+
+    <button class="oblock" id="clear">Clear and Reset Signature</button>
+
+</body>
+</html>
+
+<footer>
+    <script>
+        createSigPad();
+    </script>
+</footer>

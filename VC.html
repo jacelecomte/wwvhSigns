@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./js/simple.js"></script>
+    <script type="text/javascript" src="./src/html2canvas.js"></script>
+    <script src="./src/SigPad.js"></script>
+    <link rel="stylesheet" type="text/css" href="./theme.css" media="screen" />
+    <title> Vaccine Consent Form </title>
+</head>
+<body onload="onPageView()">
+    <h1> Warren Woods Veterinary Hospital Vaccine Consent Form </h1>
+    <p id="HospInfo"></p>
+
+    <p>
+        Warren Woods Veterinary Hospital is continuing to provide the best recommendations for the optimum health of
+        your pet. Vaccine recommendations are currently being researched by various veterinary health organizations and
+        are in the process of being modified. Currently the American Veterinary Medical Association is recommending core
+        vaccination programs be developed by veterinarians based on the patients lifestyle and risk factors. Core vaccines are considered those that protect
+        them from diseases that are widely distributed in the region, virulent, and highly infectious, thereby posing a risk of severe disease.
+        Core vaccines are efficacious and exhibit patient benefit: risk ratios high enough to warrant their use, and/or are of considerable public
+        health significance, or required by law.<br><br>
+
+        <b>Core Vaccines at Warren Woods Veterinary Hospital include:</b><br> <b>Canine:</b> Rabies, Distemper aka DHLPP
+        - Distemper, Hepatitis, Leptospirosis, Parainfluenza, and Parvovirus.<br>
+        <b>Feline:</b> Rabies, Distemper aka FVRCP - Viral Rhinotracheitis, Calicivirus, and Panleukopenia. <br><br>
+
+        <b>Non-core Vaccines include: </b> <br>
+        <b> Canine: </b> Kennel Cough (Bordetella), Lyme, Influenza <br>
+        <b> Feline: </b> Infectious Peritonitis and Leukemia.<br><br>
+
+        Warren Woods Veterinary Hospital recommends vaccination with core vaccines to puppies and kittens every 3-4
+        weeks until 16 weeks of age then an annual booster vaccination until five years of age. At five years of age
+        vaccination protocols will be modified based on the patient's lifestyle and risk exposure (an exception to this protocol is the rabies vaccine that is
+        governed by city and state regulations). In cases of adverse vaccine reaction by the patient, vaccinations may be stopped and titers may be
+        recommended. Non-core vaccines will be given at the owner's and veterinarian's discretion based on the patient's exposure risk.<br>
+
+        Although most pets respond well to vaccines, like any medical procedure, vaccination carries some risk. The most
+        common adverse responses are mild and short-term, including fever, sluggishness and reduced appetite. Pets may
+        also experience temporary pain or subtle swelling at the site of vaccination. Although most adverse responses will resolve within a day or two,
+        excessive pain, swelling or listlessness should be discussed with your veterinarian.<br>
+    </p>
+
+    <p id="critical">
+        Rarely, serious adverse responses occur. Contact your veterinarian immediately if your pet has repeated
+        vomiting or diarrhea, whole body itching, difficulty breathing, collapse or swelling of the face or legs. These signs may indicate an
+        allergic reaction. In very rare instances, death can occur. I have been advised of the risk and benefits related to vaccines and AGREE to vaccinate
+        my pet with the vaccines recommended by Warren Woods Veterinary Hospital for this year. I understand that vaccinations can cause adverse reactions and
+        agree to hold Warren Woods Veterinary Hospital harmless should my companion animal adversely react to a vaccine administered by an agent of Warren
+        Woods Veterinary Hospital.
+    </p>
+
+    <p id="CritSigInfo"></p>
+
+    <p id="userinfo"></p> <p id="whattime"></p> <p id="date"></p>
+
+    <div class="wrapper"> <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas> </div> <br><br>
+
+    <button class="block" onclick="onFinSig()" id="save-png">Finalize Signature</button> <br><br>
+
+    <button class="oblock" id="clear">Clear and Reset Signature</button>
+
+</body>
+</html>
+
+<footer>
+    <script>
+        createSigPad();
+    </script>
+</footer>
+
+
